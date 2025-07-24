@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめまして！ After Effects</title>
+    <link rel="stylesheet" href="./css/study.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="rectangle-01"></div>
+    <div class="rectangle-02"></div>
+    <div class="rectangle-03"></div>
+  </div> 
+</header>
+
+<nav class="side-menu" id="sideMenu">
+  <a href="top.html">TOP</a>
+  <a href="about.html">ABOUT</a>
+  <a href="study.html">STUDY</a>
+</nav>
+
+
+<main class="main-area">
+
+  <div class="title-text"><span class="title_span">はじめまして！ After Effects</span></div>
+
+  <div class="white-box">
+    <!-- 横幅图片 -->
+    <img src="image/banner02.png" alt="After Effectsを学ぶ" class="banner-img" />
+
+    <!-- 小标题 -->
+    <div class="section-title">
+      <span class="dot"></span>
+      <span class="title">おすすめ</span>
+    </div>
+
+    <div class="recommend-section">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-image">
+            <img src="image/ui.jpg" alt="smaple01">
+          </div>
+          <div class="card-content">
+            <h3>After Effect 機能を紹介</h3>
+            <div class="tags">
+              <span class="tag">初級</span>
+              <span class="tag">アニメ</span>
+            </div>
+            <div class="icons">♡</div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <img src="image/anime.jpg" alt="smaple02">
+          </div>
+          <div class="card-content">
+            <h3>アニメーションの基礎</h3>
+            <div class="tags">
+              <span class="tag">初級</span>
+              <span class="tag">アニメ</span>
+            </div>
+            <div class="icons">♡</div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <img src="image/vfx.jpg" alt="smaple03">
+          </div>
+          <div class="card-content">
+            <h3>After Effect 入門</h3>
+            <div class="tags">
+              <span class="tag">初級</span>
+              <span class="tag">アニメ</span>
+            </div>
+            <div class="icons">♡</div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <img src="image/moji.jpg" alt="smaple04">
+          </div>
+          <div class="card-content">
+            <h3>手書きのタイトルの作成</h3>
+            <div class="tags">
+              <span class="tag">初級</span>
+              <span class="tag">アニメ</span>
+            </div>
+            <div class="icons">♡</div>
+          </div>
+        </div>
+    
+      </div>
+    </div>    
+    
+
+  </div>
+
+</main>
+ 
+<footer class="site-footer">
+  <p>はじめまして！ After Effects</p>
+  <p>&copy; 2025 HUQIANYUE | TOKYOKOUGEI</p>
+</footer>
+
+</body>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("open");
+  }
+</script>
+
+</html>
