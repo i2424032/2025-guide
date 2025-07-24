@@ -270,6 +270,7 @@ body {
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 12px;
+  transition: opacity 0.3s ease;
 }
 
 .card-image img {
@@ -277,6 +278,11 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
+}
+
+.card-image:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .card-content h3 {
