@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめまして！ After Effects</title>
+    <link rel="stylesheet" href="./css/top.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="rectangle-01"></div>
+    <div class="rectangle-02"></div>
+    <div class="rectangle-03"></div>
+  </div> 
+</header>
+
+<nav class="side-menu" id="sideMenu">
+  <a href="top.html">TOP</a>
+  <a href="about.html">ABOUT</a>
+  <a href="study.html">STUDY</a>
+</nav>
+
+
+<main class="main-area">
+
+  <div class="title-text"><span class="title_span">はじめまして！ After Effects</span></div>
+
+  <div class="white-box">
+    <!-- 横幅图片 -->
+    <a href="about.html" class="banner-link">
+      <img src="image/banner01.png" alt="After Effectsとは" class="banner-img" />
+    </a>
+
+    <!-- 小标题 -->
+    <div class="section-title">
+      <span class="dot"></span>
+      <span class="title">準備しよう</span>
+    </div>
+
+    <!-- 图文区块1 -->
+    <div class="info-block">
+      <img src="image/computer-icon.png" alt="PC icon" class="info-icon" />
+      <div class="info-text">
+        <p>Mac・Windows</p>
+        <small>どちらのPCでもOK</small>
+      </div>
+    </div>
+
+    <!-- 图文区块2 -->
+    <div class="info-block">
+      <img src="image/cc-icon.png" alt="Creative Cloud" class="info-icon" />
+      <div class="info-text">
+        <p>Adobe Creative Cloud</p>
+        <small>アカウント必要</small>
+      </div>
+    </div>
+
+    <!-- 按钮 -->
+    <button onclick="location.href='study.html'" class="start-button">START</button>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>はじめまして！ After Effects</p>
+  <p>&copy; 2025 HUQIANYUE | TOKYOKOUGEI</p>
+</footer>
+
+</body>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("open");
+  }
+</script>
+
+</html>
