@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はじめまして！ After Effects</title>
+    <link rel="stylesheet" href="./int.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="rectangle-01"></div>
+    <div class="rectangle-02"></div>
+    <div class="rectangle-03"></div>
+  </div> 
+</header>
+
+<nav class="side-menu" id="sideMenu">
+  <a href="index.html">TOP</a>
+  <a href="about.html">ABOUT</a>
+  <a href="study.html">STUDY</a>
+</nav>
+
+
+<main class="main-area">
+
+  <div class="title-text"><span class="title_span">はじめまして！ After Effects</span></div>
+
+  <div class="white-box">
+    <!-- 横幅图片 -->
+    <img src="image/banner.png" alt="After Effectsとは" class="banner-img" />
+
+    <p class="text">
+        <span class="aftereffects_span">After Effects</span> （以下、AE）は、Adobe社が提供する映像制作ソフトで、「動き」をデザインするための多機能ツールです。ここでは、初心者でも押さえておきたい主要な機能を簡単に紹介します。
+    </p>
+
+    <!-- 小标题 -->
+    <div class="section-title">
+      <span class="dot"></span>
+      <span class="title">タイムラインとキーフレーム</span>
+    </div>
+    <p class="subtitle">動きの基本をつくる「時間の線」</p>
+    <p class="description">AEでは、オブジェクトの動き（位置・回転・不透明度など）を「キーフレーム」でコントロールします。時間の流れに合わせてアニメーションを設計することができます。</p>
+
+    <div class="section-title">
+        <span class="dot"></span>
+        <span class="title">コンポジション</span>
+    </div>
+      <p class="subtitle">映像のキャンバスをつくる場所</p>
+      <p class="description">コンポジションは、アニメーションや映像を作る「土台」のようなもの。サイズや時間、フレームレートなどを設定し、その中で素材を動かします。</p>
+
+    <div class="section-title">
+        <span class="dot"></span>
+        <span class="title">レイヤー構造</span>
+    </div>
+      <p class="subtitle">素材を重ねて作る表現</p>
+      <p class="description">Photoshopのように、AEでも素材は「レイヤー」として積み重ねて使います。画像・動画・文字・図形など、さまざまな要素を組み合わせて表現が可能です。</p>
+
+
+  </div>
+
+
+
+</main>
+
+<footer class="site-footer">
+  <p>はじめまして！ After Effects</p>
+  <p>&copy; 2025 HUQIANYUE | TOKYOKOUGEI</p>
+</footer>
+
+
+</body>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("open");
+  }
+</script>
+
+</html>

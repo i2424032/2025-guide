@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+* {
+  margin: 0; /*外边距*/
+  padding: 0; /*内边距*/
+  border: 0; /*边框*/
+  outline: 0; 
+  background-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 
+  'M PLUS Rounded 1c',
+  'Baloo 2',
+  sans-serif;
+  overflow: hidden;
+  background:linear-gradient(270deg, #e7deff, #b892d8,#67588a);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+
+
+/*顶部*/
+.header {
+  position: fixed; /*固定定位*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #816EC8;
+  z-index: 1000; /*层级*/
+  display: flex; /*布局*/
+  justify-content: flex-end; /*内部元素靠右对齐*/
+  align-items: center; /*内部元素垂直居中*/
+  padding: 20px; /*内边距*/
+  box-sizing: border-box;
+}
+
+.hamburger {
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.rectangle-01 {
+  width: 18px;
+  height: 2.14px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #3A4099;
+  border-radius: 12px;
+}
+
+.rectangle-02 {
+  width: 18px;
+  height: 2.14px;
+  left: 0px;
+  top: 6.43px;
+  position: absolute;
+  background: #3A4099;
+  border-radius: 12px;
+}
+
+.rectangle-03 {
+  width: 18px;
+  height: 2.14px;
+  left: 0px;
+  top: 12.86px;
+  position: absolute;
+  background: #3A4099;
+  border-radius: 12px;
+}
+
+
+/*菜单*/
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  padding: 60px 20px 20px 20px;
+  box-sizing: border-box;
+  transition: right 0.3s ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu a {
+  color: black;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 24px;
+  transition: background-color 0.3s;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.side-menu a:hover {
+  background-color: #DDE2F8
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+
+/*底部*/
+.site-footer {
+  background-color: #DDE2F8;
+  position: fixed;
+  bottom: 0;
+  color: #797979;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/*主要内容*/
+.main-area {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-height: calc(100vh - 60px);
+}
+
+.title_span {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.60px;
+  word-wrap: break-word;
+}
+
+.title-text {
+  width: 90%;
+  max-width: 50vw;
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+
+.white-box {
+  background-color: white;
+  color: black;
+  padding: 27px;
+  width: 90%;
+  max-width: 50vw;
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /*内部元素垂直居中*/
+}
+
+.white-box::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* 横幅图片 */
+.banner-img {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-word;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+
+.aftereffects_span {
+  font-size: 24px;
+}
+
+/* 标题和圆点 */
+.section-title {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+  
+.section-title .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #3A4099;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+  
+.section-title .title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.subtitle {
+    align-self: flex-start;
+  font-size: 14px;
+  color: #3A4099;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
